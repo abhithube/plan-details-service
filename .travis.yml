@@ -2,7 +2,16 @@ language: java
 jdk:
   - openjdk11
 
+services:
+  - docker
+
 install: true
 
 script:
-  - ./mvnw clean install -B
+  - docker build -t insurance-portal/member-details .
+
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master

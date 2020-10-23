@@ -1,14 +1,11 @@
 language: java
-jdk:
-  - openjdk11
+jdk: openjdk11
 
-services:
-  - docker
+services: docker
 
 install: true
 
-script:
-  - docker build -t insurance-portal/plan-details .
+script: docker build -t insurance-portal/plan-details .
 
 deploy:
   provider: script

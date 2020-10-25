@@ -1,9 +1,6 @@
-language: java
-jdk: openjdk11
+language: minimal
 
-services: docker
-
-install: true
+install: skip
 
 script: docker build -t insurance-portal/plan-details .
 

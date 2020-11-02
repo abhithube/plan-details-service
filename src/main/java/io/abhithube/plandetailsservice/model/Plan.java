@@ -14,8 +14,8 @@ public class Plan {
     @Id
     private String id;
     private String name;
-    private double cost;
-    private double deductible;
+    private long cost;
+    private long deductible;
 
     private String productId;
     private String priceId;

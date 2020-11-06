@@ -1,8 +1,9 @@
 # Plan Details Service [![Build Status](https://travis-ci.com/abhithube/plan-details-service.svg?branch=master)](https://travis-ci.com/abhithube/plan-details-service) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m786310888-e72a74101e97560d6bbf571e?label=status)
 
 
+This is the plan-details microservice of the AT Insurance web application. It defines the REST API for retrieving a benefit plan's details.
 
-This is the plan-details microservice of the AT Insurance web application. It defines the REST API for retrieving a benefit plan's details. The README in the front end repo, found [here](https://github.com/abhithube/insurance-portal-angular), has more details about the whole project.
+The [README](https://github.com/abhithube/insurance-portal-angular) in the front end repo has more details about the whole project.
 
 **IMPORTANT:** To save on AWS server costs, the application is only up during the day. I set up a cron job scheduler on AWS auto-scaling to terminate all of the EC2 instances every night, and start them up again in the morning. The "status" badge at the top indicates if the application is currently up.
 

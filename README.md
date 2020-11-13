@@ -5,16 +5,15 @@ This is the plan-details microservice of the AT Insurance web application. It de
 
 The [README](https://github.com/abhithube/insurance-portal-angular) in the front end repo has more details about the whole project.
 
-**IMPORTANT:** To save on AWS server costs, the application is only up during the day. I set up a cron job scheduler on AWS auto-scaling to terminate all of the EC2 instances every night, and start them up again in the morning. The "status" badge at the top indicates if the application is currently up.
+**NOTE:** To save on AWS server costs, the application is only up during the day. A cron job scheduler on AWS auto-scaling terminates all of the EC2 instances every night, and start them up again in the morning. The "status" badge at the top indicates if the application is currently up.
 
 ## API Documentation
 The API documentation for this microservice was generated using Swagger. It can be found at https://at-insurance.com/plan-details-service/swagger-ui/.
 
 ## Technologies
-- Programming Language: Java
-- Framework: Spring Boot
-- DBMS: MongoDB
-- Testing: JUnit, Mockito
-- Build: Maven
-- CI/CD: Travis CI
-- Deployment: Docker, AWS
+- **Programming Language**: Java
+- **Framework**: Spring Boot
+- **DBMS**: MongoDB
+- **Testing**: JUnit, Mockito
+- **Build**: Maven
+- **CI/CD**: Travis CI, Docker, AWS
